@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Login Card -->
+        <div class="card">
+            <div class="card-header">
+                <div class="icon icon-login"></div>
+                <h3 class="card-title">Login</h3>
+            </div>
+            <div class="card-content">
+                <div class="form-group">
+                    <input type="text" class="input" placeholder="Username">
+                    <input type="password" class="input" placeholder="Password">
+                    <button class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Magang Card -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Form Magang</h3>
+            </div>
+            <div class="card-content">
+                <div class="form-group">
+                    <input type="text" class="input" placeholder="Nama Lengkap">
+                    <input type="email" class="input" placeholder="Email">
+                    <select class="input">
+                        <option>Pilih Jurusan</option>
+                        <option>Teknik Informatika</option>
+                        <option>Sistem Informasi</option>
+                    </select>
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Approval Prodi Card -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Approval Prodi</h3>
+            </div>
+            <div class="card-content">
+                <div class="status-list">
+                    <div class="status-item">
+                        <span>Mahasiswa A</span>
+                        <span class="status status-approved">Approved</span>
+                    </div>
+                    <div class="status-item">
+                        <span>Mahasiswa B</span>
+                        <span class="status status-pending">Pending</span>
+                    </div>
+                    <div class="status-item">
+                        <span>Mahasiswa C</span>
+                        <span class="status status-rejected">Rejected</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logbook Card -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Logbook</h3>
+            </div>
+            <div class="card-content">
+                <div class="logbook-entries">
+                    <div class="logbook-item">
+                        <div class="date">15 Jun 2025</div>
+                        <div class="activity">Learning React Components</div>
+                    </div>
+                    <div class="logbook-item">
+                        <div class="date">14 Jun 2025</div>
+                        <div class="activity">Database Design</div>
+                    </div>
+                </div>
+                <button class="btn btn-secondary">Add Entry</button>
+            </div>
+        </div>
+
+        <!-- Additional Cards for Second Row -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Penilaian Perusahaan</h3>
+            </div>
+            <div class="card-content">
+                <div class="rating-section">
+                    <div class="rating-item">
+                        <span>Komunikasi</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="rating-item">
+                        <span>Teknis</span>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Bimbingan</h3>
+            </div>
+            <div class="card-content">
+                <div class="form-group">
+                    <textarea class="input textarea" placeholder="Catatan bimbingan..."></textarea>
+                    <button class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Progress Report</h3>
+            </div>
+            <div class="card-content">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%"></div>
+                </div>
+                <p>Progress: 75% Complete</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Sertifikat</h3>
+            </div>
+            <div class="card-content">
+                <div class="certificate-preview">
+                    <div class="certificate-placeholder">
+                        <h4>Sertifikat Magang</h4>
+                        <p>Nama Mahasiswa</p>
+                        <p>Program Studi</p>
+                    </div>
+                    <button class="btn btn-success">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
