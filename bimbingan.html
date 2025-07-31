@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Dashboard Prodi</title>
+  <title>Bimbingan</title>
   <style>
     body {
       margin: 0;
@@ -48,20 +48,38 @@
     }
 
     h2 {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
-    .data-row {
+    .form-group {
       margin-bottom: 20px;
+    }
+
+    .upload-link {
+      color: #2e68ff;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .textarea {
+      width: 300px;
+      height: 100px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      resize: none;
+      background-color: #91b4f5;
+      color: black;
       font-weight: bold;
     }
 
-    .data-row span {
-      font-weight: normal;
-      display: inline-block;
-      border-bottom: 1px solid #ccc;
-      width: 300px;
-      margin-left: 10px;
+    .label {
+      font-weight: bold;
+      color: #2e68ff;
+      display: block;
+      margin-bottom: 5px;
     }
   </style>
 </head>
@@ -71,25 +89,25 @@
   <div class="sidebar">
     <button>📄 Form Magang</button>
     <button>📑 Approval Prodi</button>
-    <button>👨‍🏫 Bimbingan</button>
+    <button class="active">👨‍🏫 Bimbingan</button>
     <button>📘 Logbook</button>
     <button>📊 Penilaian Perusahaan</button>
     <button>📜 Sertifikat</button>
-    <button class="active">📂 Dashboard Prodi</button>
+    <button>📂 Dashboard Prodi</button>
   </div>
 
   <div class="main">
-    <h2>Data Prodi</h2>
+    <h2>Bimbingan</h2>
 
-    <div class="data-row">
-      Daftar magang: <span></span>
+    <div class="form-group">
+      <a href="#" class="upload-link">Upload tentang data diri</a>
     </div>
-    <div class="data-row">
-      Status Mahasiswa: <span></span>
+
+    <div class="form-group">
+      <label class="label">Komentar pembimbing</label>
+      <textarea class="textarea" placeholder="Tulis komentar..."></textarea>
     </div>
-    <div class="data-row">
-      Rekap Nilai: <span></span>
-    </div>
+
   </div>
 </div>
 

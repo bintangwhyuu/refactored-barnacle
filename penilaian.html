@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Approval Prodi</title>
+  <title>Penilaian Perusahaan</title>
   <style>
     body {
       margin: 0;
@@ -47,51 +47,42 @@
       padding: 40px;
     }
 
-    .form-group {
+    h2 {
       margin-bottom: 20px;
     }
 
-    .form-group label {
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
       display: block;
       font-weight: bold;
       margin-bottom: 5px;
     }
 
-    .form-group input {
-      width: 100%;
-      padding: 8px;
-      border: none;
-      border-bottom: 1px solid #ccc;
-      outline: none;
-      background-color: transparent;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 10px;
-      margin-top: 20px;
-    }
-
-    .buttons button {
-      padding: 10px 20px;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-      color: white;
+    .rating {
+      background-color: #f9dada;
+      padding: 8px 12px;
       border-radius: 5px;
+      display: inline-block;
     }
 
-    .btn-setuju {
-      background-color: limegreen;
+    .stars {
+      font-size: 18px;
+      letter-spacing: 5px;
+      color: #444;
     }
 
-    .btn-tolak {
-      background-color: red;
-    }
-
-    .btn-revisi {
-      background-color: gold;
-      color: black;
+    .submit-btn {
+      margin-top: 20px;
+      padding: 10px 30px;
+      background-color: #91b4f5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -100,37 +91,38 @@
 <div class="container">
   <div class="sidebar">
     <button>📄 Form Magang</button>
-    <button class="active">📑 Approval Prodi</button>
+    <button>📑 Approval Prodi</button>
     <button>👨‍🏫 Bimbingan</button>
     <button>📘 Logbook</button>
-    <button>📊 Penilaian Perusahaan</button>
+    <button class="active">📊 Penilaian Perusahaan</button>
     <button>📜 Sertifikat</button>
     <button>📂 Dashboard Prodi</button>
   </div>
 
   <div class="main">
+    <h2>Penilaian</h2>
+
     <div class="form-group">
-      <label>Nama Pendaftar:</label>
-      <input type="text" placeholder="Masukkan nama">
-    </div>
-    <div class="form-group">
-      <label>NIM:</label>
-      <input type="text" placeholder="Masukkan NIM">
-    </div>
-    <div class="form-group">
-      <label>Perusahaan:</label>
-      <input type="text" placeholder="Masukkan nama perusahaan">
-    </div>
-    <div class="form-group">
-      <label>Prodi:</label>
-      <input type="text" placeholder="Masukkan prodi">
+      <label>Kedisiplinan</label>
+      <div class="rating"><span class="stars">☆ ☆ ☆ ☆ ☆</span></div>
     </div>
 
-    <div class="buttons">
-      <button class="btn-setuju">Setuju</button>
-      <button class="btn-tolak">Tolak</button>
-      <button class="btn-revisi">Revisi</button>
+    <div class="form-group">
+      <label>Kemampuan</label>
+      <div class="rating"><span class="stars">☆ ☆ ☆ ☆ ☆</span></div>
     </div>
+
+    <div class="form-group">
+      <label>Giat Bekerja</label>
+      <div class="rating"><span class="stars">☆ ☆ ☆ ☆ ☆</span></div>
+    </div>
+
+    <div class="form-group">
+      <label>Lembur</label>
+      <div class="rating"><span class="stars">☆ ☆ ☆ ☆ ☆</span></div>
+    </div>
+
+    <button class="submit-btn">Submit</button>
   </div>
 </div>
 
